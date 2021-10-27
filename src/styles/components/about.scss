@@ -1,0 +1,47 @@
+section#about {
+  // background-color: lightblue;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  padding: 5rem 10rem;
+  @include media('<=phone') {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    padding: 0;
+  }
+  @include media('<=Mphone') {
+    // padding: 3.5rem 2rem;
+  }
+  @include media('<=SMphone') {
+    // padding: 3rem 2rem;
+  }
+  h2 {
+    font-size: 6rem;
+    font-weight: 300;
+
+    @include media('<=LGdesktop') {
+      font-size: 4.5rem;
+    }
+    @include media('<=Mdesktop') {
+      font-size: 3.5rem;
+    }
+    @include media('<=desktop') {
+      font-size: 3rem;
+    }
+    @include media('<=phone') {
+      font-size: 7.5vw;
+    }
+  }
+}
+.about-light {
+  h2 {
+    color: $dark;
+  }
+}
+.about-dark {
+  h2 {
+    color: $white;
+  }
+}

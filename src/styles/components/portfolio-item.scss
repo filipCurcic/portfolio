@@ -1,0 +1,147 @@
+.portfolio-item {
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 6.5rem 10rem;
+  position: relative;
+  flex-basis: 100%;
+  @include media('<=phone') {
+    padding: 22.5vw 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid-rows {
+    display: grid;
+    grid-template-rows: 20% 80%;
+    @include media('<=phone') {
+      grid-template-rows: 15% 85%;
+    }
+    h1 {
+      font-size: 5rem;
+      font-weight: 200;
+      margin: 0;
+
+      @include media('<=phone') {
+        text-align: center;
+        font-size: 12.5vw;
+        white-space: nowrap;
+      }
+    }
+    h4 {
+      display: none;
+      color: $white;
+      font-weight: 200;
+      text-align: center;
+      @include media('<=phone') {
+        display: block;
+        font-size: 5vw;
+        white-space: nowrap;
+      }
+    }
+    .grid-columns {
+      display: grid;
+      grid-template-columns: 35% 65%;
+      @include media('<=phone') {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      & > *:nth-child(1) {
+        padding-right: 4rem;
+        @include media('<=phone') {
+          display: none;
+          // padding: 3rem 0;
+          padding: 3.5vw 0;
+        }
+
+        p {
+          font-size: 2.5rem;
+          margin: 0;
+          font-weight: 100;
+          @include media('<=Mdesktop') {
+            font-size: 2vw;
+          }
+          @include media('<=phone') {
+            font-size: 4vw;
+            display: none;
+          }
+        }
+      }
+      & > *:nth-child(2) {
+        position: relative;
+        &:hover {
+          img {
+            opacity: 0.1;
+          }
+          .buttons {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+      6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+      12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+      22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+      41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+      100px 100px 80px rgba(0, 0, 0, 0.07);
+
+    transition: 0.35s;
+
+    @include media('<=phone') {
+      aspect-ratio: 9/18;
+      // width: 90%;
+      height: auto;
+      max-height: 60vh;
+      margin: auto;
+    }
+  }
+  .buttons {
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    transition: 0.35s;
+    z-index: 20;
+    ul {
+      li {
+        a {
+          font-size: 2vw;
+        }
+      }
+    }
+    @include media('<=phone') {
+      position: relative;
+      opacity: 1;
+      top: 0;
+      ul {
+        li {
+          a {
+            font-size: 4vw;
+          }
+        }
+      }
+    }
+  }
+}
+.portfolio-item-dark {
+  h1,
+  p {
+    color: $white;
+  }
+}
+.portfolio-item-light {
+  h1,
+  p {
+    color: $dark;
+  }
+}

@@ -1,0 +1,92 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  transition: all ease 0.45s;
+  text-transform: uppercase;
+  height: 100px;
+  .light {
+    color: rgb(34, 39, 51);
+    &:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      display: block;
+      margin-top: 5px;
+      right: 0;
+      background: rgb(34, 39, 51);
+      transition: 0.4s ease;
+    }
+  }
+  .dark {
+    color: $white;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      display: block;
+      margin-top: 5px;
+      right: 0;
+      background: $white;
+      transition: 0.4s ease;
+    }
+  }
+
+  @include media('<=phone') {
+    width: 100%;
+    height: 75px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      a {
+        opacity: 0.6;
+        transition: all ease 0.65s;
+        display: block;
+        padding: 0 1rem;
+        position: relative;
+        font-size: 1.15rem;
+        letter-spacing: 4px;
+        margin: 0 1rem;
+
+        @include media('<=phone') {
+          text-transform: none;
+          font-size: 1.1rem;
+          padding: 0 0.1;
+          margin: 0;
+          letter-spacing: 0;
+        }
+        @include media('<=SMphone') {
+          font-size: 0.9rem;
+        }
+
+        &:hover {
+          opacity: 1;
+          &:after {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+nav.nav-active {
+  opacity: 1;
+  height: 60px;
+}
+.nav-dark {
+  background-color: #222733e0;
+}
+.nav-light {
+  background-color: $whiteTransparent;
+}

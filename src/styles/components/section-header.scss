@@ -1,0 +1,36 @@
+.section-header {
+  text-align: center;
+  padding: 5rem 0 0;
+  h1 {
+    font-size: 2rem;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.525rem;
+    padding-bottom: 2rem;
+    @include media('<=phone') {
+      font-size: 1rem;
+      padding-bottom: 1rem;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 18rem;
+      height: 4px;
+      margin-left: -9rem;
+      background-color: #525e65;
+      @include media('<=phone') {
+        width: 13rem;
+        margin-left: -6.5rem;
+      }
+    }
+  }
+}
+.light {
+  color: rgb(34, 39, 51);
+}
+.dark {
+  color: $white;
+}

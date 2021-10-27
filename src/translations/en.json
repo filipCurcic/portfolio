@@ -1,0 +1,38 @@
+{
+  "home_greeting": "Hey!",
+  "home_intro1": "I'm a graduated software engineer with a focus on Front End development.",
+  "home_intro2": "I create modern, responsive websites to help people go further online.",
+  "about1": {
+    "value1": "Hello, I'm ",
+    "value2": "I am a web developer based in Serbia."
+  },
+  "about2": {
+    "value1": "I graduated from Singidunum University in 2020 with a BS in ",
+    "value2": "Software Engineering"
+  },
+  "about3": {
+    "value1": "Since then, i've focused on improving my skills, especially in the",
+    "value2": "department."
+  },
+  "about4": " During the past year i've had the opportunity to work on a couple of projects which can be seen below.",
+  "portfolio_item1": {
+    "title": "Jeffrey Cheah",
+    "mobileSummary": "Photography and videography portfolio",
+    "description": "Plain HTML and SCSS portfolio website. "
+  },
+  "portfolio_item2": {
+    "title": "David Chapman",
+    "mobileSummary": "Photography and videography portfolio",
+    "description": "Portfolio app made with React and firebase. It offers image and video upload functionality along with Google authentication."
+  },
+  "portfolio_item3": {
+    "title": "Beauty webshop",
+    "mobileSummary": "Photography and videography portfolio",
+    "description": "Full Stack webshop made with Angular and Java Spring"
+  },
+  "portfolio_item4": {
+    "title": "4mi4u",
+    "mobileSummary": "Photography and videography portfolio",
+    "description": "Full stack mobile app made with Angular, Ionic and Java Spring"
+  }
+}

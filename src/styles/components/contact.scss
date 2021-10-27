@@ -1,0 +1,25 @@
+section#contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  @include media('<=phone') {
+    height: 35vh;
+  }
+  &:nth-child(4) {
+    svg {
+      @include media('<=phone') {
+        width: 6vw;
+      }
+    }
+  }
+  svg {
+    cursor: pointer;
+    @include media('<=phone') {
+      width: 8vw;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "home_greeting": "Ćao!",
+  "home_intro1": "Ja sam diplomirani softverski inženjer sa fokusom na Front End developmentu.",
+  "home_intro2": "Pravim moderne, responsive sajtove koji pomažu ljudima u njihovom online prisustvu. ",
+  "about1": {
+    "value1": "Ćao, zovem se ",
+    "value2": "Ja sam veb developer iz Srbije."
+  },
+  "about2": {
+    "value1": "Diplomirao sam sa Univerziteta Singidunum sa titulom ",
+    "value2": "Softverskog Inženjera"
+  },
+  "about3": {
+    "value1": "Od tada sam se usresredio na poboljšanju postojećih i učenju novih veština pogotovo oko ",
+    "value2": "developmenta."
+  },
+  "about4": " Tokom protekle godine imao sam priliku da radim na nekoliko projekata koji se mogu videti ispod.",
+  "portfolio_item1": {
+    "title": "Jeffrey Cheah Fotografski i Videografski portfolio",
+    "mobileSummary": "Photography and videography portfolio",
+    "description": "Vebsajt radjen samo sa HTML i SCSS"
+  },
+  "portfolio_item2": {
+    "title": "David Chapman Fotografski i Videografski portfolio",
+    "mobileSummary": "Photography and videography portfolio",
+    "description": "Portfolio aplikacija napravljena sa React-om i serverskim delom radjenim uz pomoc Firebase. Pruža funkcionalnosti postavljanja slika i embedded YouTube video snimaka uz autentikaciju preko Google-a."
+  },
+  "portfolio_item3": {
+    "title": "Webshop kozmetike",
+    "mobileSummary": "Photography and videography portfolio",
+    "description": "Full Stack webshop aplikacija napravljena sa Angular-om i Java Spring + MySQL"
+  },
+  "portfolio_item4": {
+    "title": "NFC Tag Aplikacija 4mi4u",
+    "mobileSummary": "Photography and videography portfolio",
+    "description": "Mobilna fullstack aplikacija napravljena sa Angularom i Java Spring + MySQL"
+  }
+}

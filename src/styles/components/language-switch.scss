@@ -1,0 +1,28 @@
+.language-switch {
+  position: absolute;
+  z-index: 999;
+  position: absolute;
+  top: 28px;
+  left: 72px;
+  .light {
+    color: $dark;
+  }
+  .dark {
+    color: $white;
+  }
+
+  @include media('<=phone') {
+    display: none;
+  }
+  button {
+    border: none;
+    cursor: pointer;
+    opacity: 0.75;
+    background-color: transparent;
+  }
+}
+.active {
+  font-size: 18.5px;
+  text-decoration: underline;
+  opacity: 1 !important;
+}
