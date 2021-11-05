@@ -30,7 +30,6 @@
     }
     h4 {
       display: none;
-      color: $white;
       font-weight: 200;
       text-align: center;
       @include media('<=phone') {
@@ -127,6 +126,7 @@
         li {
           a {
             font-size: 4vw;
+            color: white;
           }
         }
       }
@@ -134,14 +134,16 @@
   }
 }
 .portfolio-item-dark {
+  p,
   h1,
-  p {
+  h4 {
     color: $white;
   }
 }
 .portfolio-item-light {
+  p,
   h1,
-  p {
+  h4 {
     color: $dark;
   }
 }

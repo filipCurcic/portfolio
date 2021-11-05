@@ -2,6 +2,7 @@ section#contact {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  overflow: hidden;
   @include media('<=phone') {
     height: 35vh;
   }
@@ -12,14 +13,14 @@ section#contact {
       }
     }
   }
+  a {
+    text-decoration: none;
+    color: $dark;
+  }
   svg {
     cursor: pointer;
     @include media('<=phone') {
       width: 8vw;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
     }
   }
 }

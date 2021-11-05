@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const FadingComponent = ({ children, duration = 1 }) => {
+const FadingComponent = ({ children, duration = 2 }) => {
   const { ref, inView } = useInView();
 
   const animation = useAnimation();

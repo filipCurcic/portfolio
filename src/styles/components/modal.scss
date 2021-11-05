@@ -1,0 +1,27 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  //   backdrop-filter: blur(3px) contrast(40%) drop-shadow(4px 4px 10px blue);
+  backdrop-filter: blur(8px) saturate(20%);
+  background-color: rgba(0, 0, 0, 0.308);
+  transition: 1s;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 33%;
+  min-height: 40%;
+}
+.modal-light {
+  background-color: $white;
+}
+.modal-dark {
+  background-color: $dark;
+}

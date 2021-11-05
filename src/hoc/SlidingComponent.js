@@ -2,14 +2,14 @@ import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const SlidingComponent = ({ children, direction }) => {
+const SlidingComponent = ({ children, direction, origin }) => {
   const { ref, inView } = useInView();
-
   const animation = useAnimation();
+  console.log(inView);
   useEffect(() => {
     if (inView) {
       animation.start({
-        x: 0,
+        [origin]: 0,
         transition: {
           duration: 0.5,
         },
@@ -17,13 +17,13 @@ const SlidingComponent = ({ children, direction }) => {
     }
     if (!inView) {
       animation.start({
-        x: direction ? -200 : 200,
+        [origin]: direction ? -200 : 200,
         transition: {
           duration: 0.5,
         },
       });
     }
-  }, [inView, animation, direction]);
+  }, [inView, animation, direction, origin]);
   return (
     <motion.div ref={ref} animate={animation}>
       {children}
