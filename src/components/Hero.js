@@ -28,6 +28,8 @@ const Hero = () => {
               summary={item.mobileSummary}
               key={item.id}
               click={toggleModal}
+              liveUrl={item.liveUrl}
+              sourceUrl={item.sourceUrl}
             />
           );
         })}

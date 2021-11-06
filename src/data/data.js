@@ -14,6 +14,8 @@ const data = [
     image: jeff,
     imagePhone: jeffPhone,
     mobileSummary: 'portfolio_item1.mobileSummary',
+    liveUrl: 'http://jeffreycheah.com.au/',
+    sourceUrl: null,
     id: 1,
   },
   {
@@ -22,6 +24,8 @@ const data = [
     image: dave,
     imagePhone: davePhone,
     mobileSummary: 'portfolio_item2.mobileSummary',
+    liveUrl: 'https://davidc.photo/',
+    sourceUrl: 'https://github.com/filipCurcic/dave-portfolio',
     id: 2,
   },
   {
@@ -30,6 +34,8 @@ const data = [
     image: webshop,
     imagePhone: webshopPhone,
     mobileSummary: 'portfolio_item3.mobileSummary',
+    liveUrl: null,
+    sourceUrl: 'https://gitlab.com/Bigaraaaa/masinkamasashop-front/',
     id: 3,
   },
   {
@@ -37,6 +43,8 @@ const data = [
     description: 'portfolio_item4.description',
     image: tapme,
     imagePhone: tapmePhone,
+    liveUrl: 'https://4mi4u.com/',
+    sourceUrl: 'https://github.com/Vujos/tapme',
     mobileSummary: 'portfolio_item4.mobileSummary',
     id: 4,
   },

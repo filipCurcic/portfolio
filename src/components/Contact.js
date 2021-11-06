@@ -1,7 +1,6 @@
 import React from 'react';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faGit } from '@fortawesome/free-brands-svg-icons';
 import ContactIcon from './ContactIcon';
 
@@ -29,12 +28,6 @@ const Contact = () => {
         iconSize="5x"
         origin="x"
       />
-      {/* <ContactIcon
-        icon={faFacebookF}
-        link="https://www.facebook.com/filip.curcic.7/"
-        direction={false}
-        iconSize="4x"
-      /> */}
     </section>
   );
 };

@@ -15,6 +15,7 @@
       font-size: 1.15rem;
       letter-spacing: 4px;
       margin: 0 1rem;
+
       @include media('<=Mdesktop') {
         font-size: 0.9rem;
         padding: 0;
@@ -37,6 +38,31 @@
           width: 100%;
           left: 0;
         }
+      }
+    }
+    p {
+      opacity: 0.1;
+      transition: all ease 0.65s;
+      display: block;
+      padding: 0 1rem;
+      position: relative;
+      letter-spacing: 4px;
+      margin: 0 1rem;
+      cursor: not-allowed !important;
+      @include media('<=Mdesktop') {
+        font-size: 0.9rem;
+        padding: 0;
+      }
+
+      @include media('<=phone') {
+        text-transform: none;
+        font-size: 1.1rem;
+        padding: 0 0.1;
+        margin: 0;
+        letter-spacing: 0;
+      }
+      @include media('<=SMphone') {
+        font-size: 0.9rem;
       }
     }
   }

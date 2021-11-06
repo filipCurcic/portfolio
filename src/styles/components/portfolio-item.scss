@@ -113,7 +113,8 @@
     z-index: 20;
     ul {
       li {
-        a {
+        a,
+        p {
           font-size: 2vw;
         }
       }
@@ -124,7 +125,8 @@
       top: 0;
       ul {
         li {
-          a {
+          a,
+          p {
             font-size: 4vw;
             color: white;
           }
