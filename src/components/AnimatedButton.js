@@ -1,7 +1,9 @@
 import React from 'react';
 
 const AnimatedButton = ({ theme, children, href }) => {
+  console.log(href);
   if (href === null) {
+    console.log('link je null');
     return (
       <ul className="animated-button">
         <li>
@@ -13,7 +15,12 @@ const AnimatedButton = ({ theme, children, href }) => {
   return (
     <ul className="animated-button">
       <li>
-        <a className={theme ? 'dark' : 'light'} href={href}>
+        <a
+          className={theme ? 'dark' : 'light'}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {children}
         </a>
       </li>

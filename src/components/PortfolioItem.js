@@ -33,6 +33,14 @@ const PortfolioItem = ({
             <div>
               <h1>{t(title)}</h1>
               <h4>{t(summary)}</h4>
+              <div className="buttons">
+                <AnimatedButton theme={theme} href={liveUrl}>
+                  Live Version
+                </AnimatedButton>
+                <AnimatedButton theme={theme} href={sourceUrl}>
+                  Source Code
+                </AnimatedButton>
+              </div>
             </div>
             <div className="grid-columns">
               <SlidingComponent direction={true} origin="x">
@@ -42,14 +50,6 @@ const PortfolioItem = ({
                 </div>
               </SlidingComponent>
               <SlidingComponent direction={false} origin="x">
-                <div className="buttons">
-                  <AnimatedButton href={liveUrl} theme={theme}>
-                    Live Version
-                  </AnimatedButton>
-                  <AnimatedButton href={sourceUrl} theme={theme}>
-                    Source Code
-                  </AnimatedButton>
-                </div>
                 <img src={image} alt="" />
               </SlidingComponent>
             </div>

@@ -18,7 +18,7 @@
   "portfolio_item1": {
     "title": "Jeffrey Cheah",
     "mobileSummary": "Photography and videography portfolio",
-    "description": "Plain HTML and SCSS portfolio website. "
+    "description": "Plain and simple photography and videography portfolio. Made with HTML and SCSS, fully responsive for phones and multiple different screen sizes. It offers the functionality of viewing images and videos."
   },
   "portfolio_item2": {
     "title": "David Chapman",

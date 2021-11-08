@@ -11,27 +11,27 @@
     "value2": "Softverskog Inženjera"
   },
   "about3": {
-    "value1": "Od tada sam se usresredio na poboljšanju postojećih i učenju novih veština pogotovo oko ",
+    "value1": "Od tada sam se usresredio na poboljšanje postojećih i učenje novih veština, pogotovo oko ",
     "value2": "developmenta."
   },
   "about4": " Tokom protekle godine imao sam priliku da radim na nekoliko projekata koji se mogu videti ispod.",
   "portfolio_item1": {
-    "title": "Jeffrey Cheah Fotografski i Videografski portfolio",
-    "mobileSummary": "Photography and videography portfolio",
-    "description": "Vebsajt radjen samo sa HTML i SCSS"
+    "title": "Jeffrey Cheah",
+    "mobileSummary": "Fotografski i videografski portfolio",
+    "description": "Jednostavan foto i video portfolio vebsajt. Radjen sa HTML i SCSS, prilagodjen i za mobilne uredjaje kao i za više veličina ekrana. Ne pruža dodatne funkcionalnosti osim pregleda slika i snimaka. "
   },
   "portfolio_item2": {
-    "title": "David Chapman Fotografski i Videografski portfolio",
-    "mobileSummary": "Photography and videography portfolio",
-    "description": "Portfolio aplikacija napravljena sa React-om i serverskim delom radjenim uz pomoc Firebase. Pruža funkcionalnosti postavljanja slika i embedded YouTube video snimaka uz autentikaciju preko Google-a."
+    "title": "David Chapman",
+    "mobileSummary": "Fotografski i videografski portfolio",
+    "description": "Full stack foto i video portfolio aplikacija. Pored pregleda foto i video sadržaja, aplikacija pruža funkcionalnosti postavljanja slika i embedded YouTube video snimaka kao i slanje e-mailova preko kontakt forme. Napravljeno je da radi samo sa jednim korisnikom."
   },
   "portfolio_item3": {
-    "title": "Webshop kozmetike",
-    "mobileSummary": "Photography and videography portfolio",
+    "title": "Webshop",
+    "mobileSummary": "K",
     "description": "Full Stack webshop aplikacija napravljena sa Angular-om i Java Spring + MySQL"
   },
   "portfolio_item4": {
-    "title": "NFC Tag Aplikacija 4mi4u",
+    "title": "4mi4u",
     "mobileSummary": "Photography and videography portfolio",
     "description": "Mobilna fullstack aplikacija napravljena sa Angularom i Java Spring + MySQL"
   }

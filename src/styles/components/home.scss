@@ -21,11 +21,13 @@ header {
     }
 
     @include media('<=phone') {
-      width: 100%;
       font-size: 1.1rem;
       text-align: center;
-      height: auto;
       padding-top: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
     @include media('<=SMphone') {
     }

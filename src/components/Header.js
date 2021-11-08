@@ -24,13 +24,10 @@ const Header = () => {
     >
       <ul>
         <li>
-          <AnimatedButton theme={theme} href="/#home">
-            Home
-          </AnimatedButton>
-          {/* <a className={theme ? 'dark' : 'light'} href="/#home">
+          <a className={theme ? 'dark' : 'light'} href="/#home">
             {' '}
             Home{' '}
-          </a> */}
+          </a>
         </li>
         <li>
           <a className={theme ? 'dark' : 'light'} href="/#about">

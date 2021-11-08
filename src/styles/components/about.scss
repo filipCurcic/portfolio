@@ -9,7 +9,7 @@ section#about {
     flex-direction: column;
     align-content: center;
     text-align: center;
-    padding: 0;
+    padding: 0 0.75rem;
   }
   @include media('<=Mphone') {
     // padding: 3.5rem 2rem;

@@ -16,7 +16,47 @@
     grid-template-rows: 20% 80%;
     @include media('<=phone') {
       grid-template-rows: 15% 85%;
+      width: 100%;
     }
+    & > *:nth-child(1) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include media('<=phone') {
+        display: block;
+      }
+      .buttons {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        transition: 0.35s;
+        z-index: 20;
+        ul {
+          li {
+            a,
+            p {
+              font-size: 1.2vw;
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+        @include media('<=phone') {
+          width: 100%;
+          justify-content: space-evenly;
+          ul {
+            li {
+              a,
+              p {
+                font-size: 4vw;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+
     h1 {
       font-size: 5rem;
       font-weight: 200;
@@ -44,7 +84,7 @@
       @include media('<=phone') {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: flex-end;
       }
       & > *:nth-child(1) {
         padding-right: 4rem;
@@ -69,14 +109,14 @@
       }
       & > *:nth-child(2) {
         position: relative;
-        &:hover {
-          img {
-            opacity: 0.1;
-          }
-          .buttons {
-            opacity: 1;
-          }
-        }
+        // &:hover {
+        //   img {
+        //     opacity: 0.1;
+        //   }
+        //   .buttons {
+        //     opacity: 1;
+        //   }
+        // }
       }
     }
   }
@@ -100,38 +140,6 @@
       height: auto;
       max-height: 60vh;
       margin: auto;
-    }
-  }
-  .buttons {
-    position: absolute;
-    top: 50%;
-    opacity: 0;
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    transition: 0.35s;
-    z-index: 20;
-    ul {
-      li {
-        a,
-        p {
-          font-size: 2vw;
-        }
-      }
-    }
-    @include media('<=phone') {
-      position: relative;
-      opacity: 1;
-      top: 0;
-      ul {
-        li {
-          a,
-          p {
-            font-size: 4vw;
-            color: white;
-          }
-        }
-      }
     }
   }
 }
