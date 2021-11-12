@@ -15,9 +15,11 @@ const PortfolioItem = ({
   click,
   sourceUrl,
   liveUrl,
+  more,
 }) => {
   const { t } = useTranslation();
   const theme = useTheme();
+  console.log(more);
 
   return (
     <>
@@ -46,10 +48,21 @@ const PortfolioItem = ({
               <SlidingComponent direction={true} origin="x">
                 <div>
                   <p>{t(description)}</p>
-                  <button onClick={click}>open modal</button>
+                  {more && (
+                    <button
+                      className={theme ? 'button-dark' : 'button-light'}
+                      onClick={() => click(more)}
+                    >
+                      More..
+                    </button>
+                  )}
                 </div>
               </SlidingComponent>
-              <SlidingComponent direction={false} origin="x">
+              <SlidingComponent
+                direction={false}
+                origin="x"
+                style={{ overflow: 'hidden' }}
+              >
                 <img src={image} alt="" />
               </SlidingComponent>
             </div>

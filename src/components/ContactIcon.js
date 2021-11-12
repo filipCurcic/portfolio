@@ -8,7 +8,6 @@ import { useTheme } from './../context/ThemeContext';
 const ContactIcon = ({ direction, icon, link, iconSize, origin }) => {
   const theme = useTheme();
   const windowDimensions = useWindowDimensions();
-  console.log(windowDimensions);
   return windowDimensions.width > 480 ? (
     <SlidingComponent direction={direction} origin={origin}>
       <motion.div

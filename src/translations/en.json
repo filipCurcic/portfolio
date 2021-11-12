@@ -18,21 +18,26 @@
   "portfolio_item1": {
     "title": "Jeffrey Cheah",
     "mobileSummary": "Photography and videography portfolio",
+    "more": "more more more",
     "description": "Plain and simple photography and videography portfolio. Made with HTML and SCSS, fully responsive for phones and multiple different screen sizes. It offers the functionality of viewing images and videos."
   },
   "portfolio_item2": {
     "title": "David Chapman",
     "mobileSummary": "Photography and videography portfolio",
-    "description": "Portfolio app made with React and firebase. It offers image and video upload functionality along with Google authentication."
+    "more": "The app was developed independently. The design was the clients idea with my slight input on some changes and recommendations. I realized it using React and SCSS with Google Firebase for the server. For the emailing service i used EmailJS.",
+    "description": "Full stack portfolio app. Aside from viewing photo, panorama and embedded YouTube video footage, it allows the user to upload all three. Being made for one user only, no login or registration functionality is available. "
   },
   "portfolio_item3": {
     "title": "Beauty webshop",
-    "mobileSummary": "Photography and videography portfolio",
-    "description": "Full Stack webshop made with Angular and Java Spring"
+    "mobileSummary": "FullStack webshop app",
+    "more": "This app was developed in a team of three. My role was mostly on the Front End working with Angular, with some things i had to do on the Back End. My tasks consisted of adding new functionalities, fixing and changing existing ones and fixing bugs. ",
+    "description": "Full Stack webshop app. Offers full webshop functionality without payment options."
   },
   "portfolio_item4": {
     "title": "4mi4u",
-    "mobileSummary": "Photography and videography portfolio",
+    "mobileSummary": "FullStack NFC app",
+    "more": "Mobile FullStack NFC app used to connect people via NFC tags which can be purchased in the app - basically a digital business card. The app was developed in a team of four. My role was exclusively on the Front End where i had to re-do most of the UI, implement new functionalities, change existing ones and fix some bugs.",
     "description": "Full stack mobile app made with Angular, Ionic and Java Spring"
-  }
+  },
+  "modal_more_info": "More info"
 }

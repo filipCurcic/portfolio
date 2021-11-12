@@ -18,21 +18,26 @@
   "portfolio_item1": {
     "title": "Jeffrey Cheah",
     "mobileSummary": "Fotografski i videografski portfolio",
+    "more": null,
     "description": "Jednostavan foto i video portfolio vebsajt. Radjen sa HTML i SCSS, prilagodjen i za mobilne uredjaje kao i za više veličina ekrana. Ne pruža dodatne funkcionalnosti osim pregleda slika i snimaka. "
   },
   "portfolio_item2": {
     "title": "David Chapman",
     "mobileSummary": "Fotografski i videografski portfolio",
-    "description": "Full stack foto i video portfolio aplikacija. Pored pregleda foto i video sadržaja, aplikacija pruža funkcionalnosti postavljanja slika i embedded YouTube video snimaka kao i slanje e-mailova preko kontakt forme. Napravljeno je da radi samo sa jednim korisnikom."
+    "more": "Aplikacija je razvijana samostalno. Dizajn je ugrubo osmišljen od strane klijenta a preveo sam ga u delo sa React i SCSS. Za serverski deo je korišćen Google Firebase. Za funkcionalnosti slanja e-maila korišćen je EmailJS",
+    "description": "Foto i video portfolio aplikacija. Pored pregleda foto i video sadržaja, aplikacija pruža funkcionalnosti postavljanja slika i embedded YouTube video snimaka kao i slanje e-mailova preko kontakt forme. Napravljeno je da radi samo sa jednim korisnikom."
   },
   "portfolio_item3": {
     "title": "Webshop",
-    "mobileSummary": "K",
-    "description": "Full Stack webshop aplikacija napravljena sa Angular-om i Java Spring + MySQL"
+    "mobileSummary": "Full Stack Webshop",
+    "more": "Aplikacija je razvijana u timu od 3 developera. Moja uloga je bila uglavnom na frontendu radeći sa Angularom, sa ponekim radom i na backendu. Zadaci su mi bili dodavanje novih i dorađivanje postojećih funkcionalnost i kao i ispravljanje bagova.",
+    "description": "Full Stack webshop aplikacija napravljena sa Angular i Java Spring + MySQL"
   },
   "portfolio_item4": {
     "title": "4mi4u",
-    "mobileSummary": "Photography and videography portfolio",
-    "description": "Mobilna fullstack aplikacija napravljena sa Angularom i Java Spring + MySQL"
-  }
+    "mobileSummary": "Full Stack NFC Tag App. ",
+    "more": "Mobilna NFC aplikacija koja služi za povezivanje ljudi preko NFC tagova koji se mogu kupiti na sajtu aplikacije. Ukratko, digitalna vizit karta. Aplikacija je razvijana u timu od 4 developera. Moja uloga je bila isključivo na frontendu, radeći sa Angularom i Ionic framework-om. Dodavao sam nove funkcionalnosti i preradio većinu UI-a u aplikaciji kao i ispravljao postojeće bagove. ",
+    "description": "Mobilna fullstack aplikacija napravljena sa Angularom, Ionic framework-om i Java Spring + MySQL"
+  },
+  "modal_more_info": "Više informacija"
 }

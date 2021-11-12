@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { useTheme } from '../context/ThemeContext';
 import { motion, AnimatePresence } from 'framer-motion';
+import useTranslation from '../hooks/UseTranslation';
 
-const Modal = ({ open, click, closeModal, children }) => {
-  console.log(open ? 'otvoren' : 'Zatvoren');
+const Modal = ({ open, click, closeModal, content }) => {
   const theme = useTheme();
+  const { t } = useTranslation();
   const backdrop = {
     visible: { opacity: 1 },
     hidden: { opacity: 0, transition: { duration: 0.01 } },
@@ -32,7 +33,13 @@ const Modal = ({ open, click, closeModal, children }) => {
             animate="visible"
             exit="hidden"
           >
-            MODAL
+            <div className="modal-heading">
+              {t('modal_more_info')}
+              <button className="close-button" onClick={click}>
+                x
+              </button>
+            </div>
+            {content}
           </motion.div>
         </motion.div>
       )}

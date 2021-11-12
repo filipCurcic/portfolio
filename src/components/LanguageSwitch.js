@@ -6,7 +6,6 @@ import { useTheme } from '../context/ThemeContext';
 const LanguageSwitch = () => {
   const { setLanguage, language } = useTranslation();
   const theme = useTheme();
-  console.log(language);
   const switchLanguage = (language) => {
     setLanguage(language);
     window.location.reload();

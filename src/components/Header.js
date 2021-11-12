@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useTheme } from '../context/ThemeContext';
 import useEventListener from '../hooks/UseEventListener';
-import AnimatedButton from './AnimatedButton';
 
 const Header = () => {
   const theme = useTheme();

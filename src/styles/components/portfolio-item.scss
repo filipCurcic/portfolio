@@ -106,6 +106,32 @@
             display: none;
           }
         }
+        button {
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          font-size: 1.25rem;
+          padding: 0.5em;
+          border-radius: 0.4em;
+          margin-top: 5rem;
+          transition: 0.5s;
+        }
+        .button-light {
+          color: $dark;
+          border: 1px solid $dark;
+          &:hover {
+            background: lighten($color: $white, $amount: 50);
+            box-shadow: 5px 6px 11px -2px rgba(0, 0, 0, 0.46);
+          }
+        }
+        .button-dark {
+          color: $white;
+          border: 1px solid $white;
+          &:hover {
+            background: lighten($color: $dark, $amount: 1);
+            box-shadow: 5px 6px 11px 0px rgba(224, 230, 221, 0.34);
+          }
+        }
       }
       & > *:nth-child(2) {
         position: relative;
@@ -122,17 +148,16 @@
   }
 
   img {
+    display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16 / 9;
     box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
       6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
       12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
       22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
       41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
       100px 100px 80px rgba(0, 0, 0, 0.07);
-
-    transition: 0.35s;
 
     @include media('<=phone') {
       aspect-ratio: 9/18;

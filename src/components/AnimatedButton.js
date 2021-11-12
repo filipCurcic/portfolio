@@ -1,9 +1,7 @@
 import React from 'react';
 
 const AnimatedButton = ({ theme, children, href }) => {
-  console.log(href);
   if (href === null) {
-    console.log('link je null');
     return (
       <ul className="animated-button">
         <li>

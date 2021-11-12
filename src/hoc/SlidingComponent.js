@@ -5,7 +5,6 @@ import { useInView } from 'react-intersection-observer';
 const SlidingComponent = ({ children, direction, origin }) => {
   const { ref, inView } = useInView();
   const animation = useAnimation();
-  console.log(inView);
   useEffect(() => {
     if (inView) {
       animation.start({
