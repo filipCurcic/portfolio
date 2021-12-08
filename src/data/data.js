@@ -9,17 +9,6 @@ import tapmePhone from '../images/tapme_phone.png';
 
 const data = [
   {
-    title: 'portfolio_item1.title',
-    description: 'portfolio_item1.description',
-    image: jeff,
-    imagePhone: jeffPhone,
-    mobileSummary: 'portfolio_item1.mobileSummary',
-    more: null,
-    liveUrl: 'http://jeffreycheah.com.au/',
-    sourceUrl: null,
-    id: 1,
-  },
-  {
     title: 'portfolio_item2.title',
     description: 'portfolio_item2.description',
     image: dave,
@@ -51,6 +40,17 @@ const data = [
     sourceUrl: 'https://github.com/Vujos/tapme',
     mobileSummary: 'portfolio_item4.mobileSummary',
     id: 4,
+  },
+  {
+    title: 'portfolio_item1.title',
+    description: 'portfolio_item1.description',
+    image: jeff,
+    imagePhone: jeffPhone,
+    mobileSummary: 'portfolio_item1.mobileSummary',
+    more: null,
+    liveUrl: 'http://jeffreycheah.com.au/',
+    sourceUrl: null,
+    id: 1,
   },
 ];
 export default data;
